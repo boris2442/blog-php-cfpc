@@ -1,20 +1,22 @@
 <?php
+session_start();
 require_once "database/database.php";
+
  /**
 *on affiche  le titre
 
  */
-$pageTitle='Accueil du blog';
+$pageTitle="S'inscrire dams ";
 
  /**
  *debut du tampon de la page de sortie
   */
   ob_start();
 
-  //inclusion de la page d'accueil
-  require_once "layouts/articles/index_html.php";
+  //inclusion de la page register_html
+  require_once "layouts/articles/register_html.php";
 
-  //recuperation du contenu des tampons de la page d'accueil
+  //recuperation du contenu des tampons de la page register_html
   $pageContent=ob_get_clean();
   //inclure le layout de la page de sortie
 
@@ -24,4 +26,8 @@ $pageTitle='Accueil du blog';
 
 
 
-  ?>
+  
+
+
+
+?>
