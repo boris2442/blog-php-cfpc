@@ -1,3 +1,8 @@
+<?php
+require_once "database/database.php"
+?>
+
+
 <!doctype html>
 <html>
 <head>
